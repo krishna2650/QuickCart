@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickCart</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            QuickCart
+        </div>
+
+        <div class="location">
+            📍
+            <span>Deliver to</span>
+            <strong>Mumbai</strong>
+        </div>
+
+        <div class="search-box">
+            🔍
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Login</a>
+
+            <!-- CART BUTTON -->
+            <a href="#cart" class="cart" id="cartButton">
+                🛒 Cart
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Groceries delivered<br>
+                to your doorstep.
+            </h1>
+
+            <p>
+                Fresh groceries, daily essentials and more,
+                delivered quickly to your home.
+            </p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+        <div class="hero-image">
+            🛒
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories">
+
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <div class="category-icon">🥦</div>
+                <h3>Vegetables</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🍎</div>
+                <h3>Fruits</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🥛</div>
+                <h3>Dairy</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🍞</div>
+                <h3>Bakery</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🍪</div>
+                <h3>Snacks</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🥤</div>
+                <h3>Drinks</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧹</div>
+                <h3>Household</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧴</div>
+                <h3>Personal Care</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR PRODUCTS -->
+
+    <section class="products">
+
+        <div class="section-title">
+            <h2>Popular Products</h2>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="product-container">
+
+
+            <!-- 1. AMUL MILK -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Amul milk.jpg" alt="Amul Taaza Milk">
+                </div>
+
+                <h3>Amul Taaza Milk</h3>
+
+                <p>500 ml</p>
+
+                <div class="product-bottom">
+                    <strong>₹30</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Amul Taaza Milk"
+                        data-price="30">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 2. APPLE -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Apple.jpg" alt="Fresh Red Apple">
+                </div>
+
+                <h3>Fresh Red Apple</h3>
+
+                <p>1 kg</p>
+
+                <div class="product-bottom">
+                    <strong>₹120</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Fresh Red Apple"
+                        data-price="120">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 3. BROWN BREAD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Bread.jpg" alt="Brown Bread">
+                </div>
+
+                <h3>Brown Bread</h3>
+
+                <p>400 g</p>
+
+                <div class="product-bottom">
+                    <strong>₹45</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Brown Bread"
+                        data-price="45">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 4. EGGS -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/egg.jpg" alt="Farm Fresh Eggs">
+                </div>
+
+                <h3>Farm Fresh Eggs</h3>
+
+                <p>6 pieces</p>
+
+                <div class="product-bottom">
+                    <strong>₹55</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Farm Fresh Eggs"
+                        data-price="55">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 5. COOKIES -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Cookie.jpg" alt="Chocolate Cookies">
+                </div>
+
+                <h3>Chocolate Cookies</h3>
+
+                <p>100 g</p>
+
+                <div class="product-bottom">
+                    <strong>₹30</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Chocolate Cookies"
+                        data-price="30">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 6. BANANAS -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Banana.jpg" alt="Fresh Bananas">
+                </div>
+
+                <h3>Fresh Bananas</h3>
+
+                <p>1 kg</p>
+
+                <div class="product-bottom">
+                    <strong>₹50</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Fresh Bananas"
+                        data-price="50">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 7. TOMATOES -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Tomato.jpg" alt="Fresh Tomatoes">
+                </div>
+
+                <h3>Fresh Tomatoes</h3>
+
+                <p>1 kg</p>
+
+                <div class="product-bottom">
+                    <strong>₹40</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Fresh Tomatoes"
+                        data-price="40">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 8. POTATOES -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Potato.jpg" alt="Fresh Potatoes">
+                </div>
+
+                <h3>Fresh Potatoes</h3>
+
+                <p>1 kg</p>
+
+                <div class="product-bottom">
+                    <strong>₹35</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Fresh Potatoes"
+                        data-price="35">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 9. PEPSI -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/Pepsi.jpg" alt="Pepsi">
+                </div>
+
+                <h3>Pepsi</h3>
+
+                <p>750 ml</p>
+
+                <div class="product-bottom">
+                    <strong>₹40</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Pepsi"
+                        data-price="40">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- 10. MAGGI -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="Images/maggi.webp" alt="Maggi Noodles">
+                </div>
+
+                <h3>Maggi Noodles</h3>
+
+                <p>280 g</p>
+
+                <div class="product-bottom">
+                    <strong>₹45</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Maggi Noodles"
+                        data-price="45">
+                        Add
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CART SECTION -->
+
+    <section class="cart-section" id="cart">
+
+        <div class="section-title">
+            <h2>🛒 Your Cart</h2>
+        </div>
+
+        <div id="cartItems">
+
+            <p>Loading cart...</p>
+
+        </div>
+
+        <div class="cart-summary">
+
+            <h3>
+                Total: ₹<span id="cartTotal">0</span>
+            </h3>
+
+            <button id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
