@@ -41,7 +41,7 @@ addButtons.forEach((button) => {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/add-to-cart",
+                "https://quickcart-ojtf.onrender.com/add-to-cart",
                 {
                     method: "POST",
 
@@ -118,7 +118,7 @@ async function loadCart() {
 
         const response =
             await fetch(
-                "http://localhost:3000/cart"
+                "https://quickcart-ojtf.onrender.com/cart"
             );
 
 
@@ -311,7 +311,7 @@ async function loadCart() {
                     try {
 
                         await fetch(
-                            `http://localhost:3000/cart/increase/${product._id}`,
+                            `https://quickcart-ojtf.onrender.com/cart/increase/${product._id}`,
                             {
                                 method: "PUT"
                             }
@@ -350,7 +350,7 @@ async function loadCart() {
                     try {
 
                         await fetch(
-                            `http://localhost:3000/cart/decrease/${product._id}`,
+                            `https://quickcart-ojtf.onrender.com/cart/decrease/${product._id}`,
                             {
                                 method: "PUT"
                             }
@@ -389,7 +389,7 @@ async function loadCart() {
                     try {
 
                         await fetch(
-                            `http://localhost:3000/cart/remove/${product._id}`,
+                            `https://quickcart-ojtf.onrender.com/cart/remove/${product._id}`,
                             {
                                 method: "DELETE"
                             }
