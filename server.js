@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(express.json());
 // MONGODB CONNECTION
 // ===============================
 
-mongoose.connect("mongodb://localhost:27017/Quickcart")
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("MongoDB Connected Successfully!");
     })
@@ -80,7 +81,7 @@ app.post("/add-to-cart", async (req, res) => {
 
         res.status(500).json({
             message: "Error adding product",
-            error: error
+            error: error.message
         });
 
     }
@@ -104,7 +105,7 @@ app.get("/cart", async (req, res) => {
 
         res.status(500).json({
             message: "Error fetching cart",
-            error: error
+            error: error.message
         });
 
     }
@@ -143,7 +144,7 @@ app.put("/cart/increase/:id", async (req, res) => {
 
         res.status(500).json({
             message: "Error increasing quantity",
-            error: error
+            error: error.message
         });
 
     }
@@ -194,7 +195,7 @@ app.put("/cart/decrease/:id", async (req, res) => {
 
         res.status(500).json({
             message: "Error decreasing quantity",
-            error: error
+            error: error.message
         });
 
     }
@@ -220,7 +221,7 @@ app.delete("/cart/remove/:id", async (req, res) => {
 
         res.status(500).json({
             message: "Error removing product",
-            error: error
+            error: error.message
         });
 
     }
@@ -232,8 +233,10 @@ app.delete("/cart/remove/:id", async (req, res) => {
 // START SERVER
 // ===============================
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
 
-    console.log("QuickCart server running on port 3000");
+app.listen(PORT, () => {
+
+    console.log(`QuickCart server running on port ${PORT}`);
 
 });
